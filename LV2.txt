@@ -20,14 +20,6 @@ int popust(int bodovi, double racun, int iskoristen)
     return 0;
 }
 
-// ZADATAK 3
-int sigurniKod(int a, int b, int c)
-{
-    if (a != b && a != c && b != c && b > a && b > c)
-        return 1;
-    return 0;
-}
-
 int main()
 {
     // ZADATAK 1
@@ -42,9 +34,5 @@ int main()
     cout << popust(15, 29.99, 0) << endl;
     cout << popust(15, 40.00, 1) << endl;
     cout << popust(20, 30.00, 0) << endl;
-
-    // ZADATAK 3
-    cout << sigurniKod(3, 7, 4) << endl;
-    cout << sigurniKod(3, 7, 3) << endl;
     cout << sigurniKod(5, 8, 3) << endl;
 }
