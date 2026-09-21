@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+//LV2- zadatak , Benjamin Jan Perhoč, funkcija uzima cijele brojeve(int, double) i vraca TRUE/FALSE
 
 // ZADATAK 1
 int srednja(int a, int b, int c)
