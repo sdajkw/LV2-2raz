@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+//LV02.1 Benjamin Jan Perhoč - int srednja(int a, int b, int c), int-ovi a,b,c - int srednja - main 3 brojeva, a funkcija srednju vrijednost
+
+// ZADATAK 1
+int srednja(int a, int b, int c)
+{
+    if ((a <= b && b <= c) || (c <= b && b <= a))
+        return b;
+    else if ((b <= a && a <= c) || (c <= a && a <= b))
+        return a;
+    else
+        return c;
+}
+
+// bool popust(int b, double r, int i) - 2x int , double - jer provjerada da li ima popust ima/nema - zadati 3 brojeva, a funkcija da/ne
+
+// ZADATAK 2
+bool popust(int bodovi, double racun, int iskoristen)
+{
+    if (bodovi >= 12 && racun >= 30.00 && iskoristen == 0)
+        return true;
+    return false;
+}
+
+int main()
+{
+    cout << "ZADATAK 1" << endl;
+    cout << srednja(4, 9, 6) << endl;
+    cout << srednja(8, 8, 3) << endl;
+    cout << srednja(5, 5, 5) << endl;
+    cout << srednja(9, 1, 6) << endl;
+
+    cout << "\nZADATAK 2" << endl;
+    cout << (popust(12, 30.00, 0)) << endl;
+    cout << (popust(11, 100.00, 0)) << endl;
+    cout << (popust(15, 29.99, 0)) << endl;
+    cout << (popust(15, 40.00, 1)) << endl;
+    cout << (popust(20, 30.00, 0)) << endl;
+}
